@@ -1,15 +1,28 @@
 # Add location to Apple Photos from Google Takeout Location History
 
-Python script to add missing location data to photos in your Apple Photos library based on your Google location history.  This script can be run stand-alone to add location data to the photos in your library or as a post-processing function for [osxphotos](https://github.com/RhetTbull/osxphotos) to add location data to photos upon export.
+Python script to add missing location data to photos in your Apple Photos library based on your [Google location history](https://takeout.google.com/settings/takeout/custom/location_history).  This script can be run stand-alone to add location data to the photos in your library or as a post-processing function for [osxphotos](https://github.com/RhetTbull/osxphotos) to add location data to photos upon export.
 
 ## Installation
 
 Clone the repo:
 
-Then
-`python3 -m pip requirements.txt`
+- `git clone https://github.com/RhetTbull/add_photo_locations_from_google_history.git`
+- `cd add_photo_locations_from_google_history`
+
+I recommend you create and activate a python [virtual environment](https://docs.python.org/3/library/venv.html) before running pip:
+
+- `python3 -m venv venv`
+- `source venv/bin/activate`
+
+Then install requirements:
+
+- `python3 -m pip requirements.txt`
+
+Requires python 3.7+
 
 ## Running
+
+Download Google location history via [Google Takeout](https://takeout.google.com/settings/takeout/custom/location_history)
 
 ```
 python3 add_photo_locations_from_google_history.py --help
