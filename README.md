@@ -46,3 +46,9 @@ I strongly recommend you run with `--dry-run` first and manually check the locat
 To run with osxphotos to add missing location info in exported photos, use this as a parameter to `--post-function`.  You'll need to pass the path to your Google location history in the environment variable `OSXPHOTOS_LOCATION_HISTORY`:
 
 `OSXPHOTOS_LOCATION_HISTORY="/path/to/Location History.json" osxphotos export /path/to/export -V --post-function add_photo_locations_from_google_history.py::add_location_to_photo_osxphotos`
+
+## Caveat
+
+This script can modify photos in your Photos library. Use with caution.  No warranty is implied or provided.
+
+The geolocation data from Google Takout will only be valid if you were the one that took the photos. If you have photos that someone else took in your library, the data may be invalid.  The script will skip photos in shared albums.
