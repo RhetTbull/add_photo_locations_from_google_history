@@ -1,0 +1,12 @@
+*.out
+*.log
+*.dump
+*.code-workspace
+.pytest_cache/
+.test_env/
+.vscode
+__pycache__*
+build/
+dist/
+.DS_Store
+venv/
